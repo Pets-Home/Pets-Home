@@ -8,7 +8,12 @@
     <link rel="stylesheet" href="css/report.css" />
     <link rel="icon" href="img/home pets.jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+ 
+
 </head>
+
 <body>
     <header>
         <nav>
@@ -24,22 +29,31 @@
     <main>
         <section>
             <h3>REPORT FOR A PET</h3>
-            <input type="text" placeholder="Enter Your Name">
-            <input type="number" placeholder="Enter Your Phone Number" >
-            <input type="text" placeholder="" >
-            <textarea placeholder="Describe The Emergency " ></textarea>
+            <input id="name" type="text" placeholder="Enter Your Name">
+            <input id="number" type="number" placeholder="Enter Your Phone Number" >
+            <textarea id="info" placeholder="Describe The Emergency " ></textarea>
         </section>
         <section>
             <h3>DONATION</h3>
             <img src="img/donation1.jpg" alt="donation">
             <i class="fa fa-paypal" style="font-size:48px;color:red"></i>
             <i class="fa fa-cc-visa" style="font-size:48px;color:red"></i>
-            <i class="fa fa-phone" style="font-size:48px;color:red"></i> <span> +962888854451</span>
-            <i class="material-icons" style="font-size:48px;color:red"></i> <span>Email: Home-Pets@gmil.com</span>
+            
+             <a href="tel:123-456-7890"><i class="fa fa-phone" style="font-size:48px;color:red"></i></a>
+
+            <a href = "mailto: abc@example.com"> <i class="material-icons" style="font-size:48px;color:red">email</i></a>
+
+
+
+           
+
         </section>
     </main>
+    <p id="demo"> <button onclick="getLocation()">Location</button> </p>
+    <input onclick="alertShown()" type="submit">
     <footer>
-        <p>&copy;2020  <span>YOU ARE WELCOME</span></p>
+        <p>&copy;2020<span>YOU ARE WELCOME</span></p>
     </footer>
+    <script src="/js/report.js"></script>
 </body>
 </html>
