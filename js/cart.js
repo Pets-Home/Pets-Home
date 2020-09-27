@@ -1,4 +1,5 @@
 let carts = new Cart();
+let xClickEl = document.getElementsByClassName('Remove');
 
 let userPet = document.getElementById('userPets');
 let cartsContent = document.getElementById('collection');
@@ -90,18 +91,33 @@ function showResults(){
     let userImg = document.createElement('img');
     let userH1 = document.createElement('h1');
     let userPar = document.createElement('p');
+    let parForRemoveEl = document.createElement('p');
+
 
     userImg.src = recivedData.name.path;
     userH1.textContent = recivedData.name.name;
     userPar.textContent = recivedData.name.description;
+    parForRemoveEl.textContent='X';
+    parForRemoveEl.id=`i,${i+1}`;
+    parForRemoveEl.className='Remove';
+
 
     userPet.appendChild(sectionUser);
     sectionUser.appendChild(userImg);
     sectionUser.appendChild(userH1);
     sectionUser.appendChild(userPar);
+    sectionUser.appendChild(parForRemoveEl);
 
   }
 
+  for (let j=0 ; j<xClickEl.length ; j++){
+    xClickEl[j].addEventListener('click',function(event)
+    {
+      let id = event.target.id;
+      localStorage.removeItem(id);
+      event.target.parentElement.remove();
+    });
+  }
 
 }
 

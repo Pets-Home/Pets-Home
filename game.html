@@ -21,15 +21,18 @@
         <img src="img/home pets.jpg" alt="Pets">
     </header>
     <main>
-        <section> <h1>Guess The Pet</h1> <span>Counter</span> <span> </span> </section>
-     <section> <img src="" alt=""></section> 
+        <section> <h1>Guess The Pet</h1> <span>Score</span> <span id="result"> </span> </section>
+     <section> <img id="img-id" src="" alt=""></section> 
+     <button onclick="start()" id="start">start Game</button>
      <section>
-         <input type="text" placeholder="Try to guess !!">
-         <button> Next </button>
+         <select  id="select-el"></select>
+         <button onclick="show()"> Next </button>
+         <p id="R"></p>
      </section>
     </main>
     <footer>
         <p>&copy;2020  <span>YOU ARE WELCOME</span></p>
     </footer>
+    <script src="/js/game.js"></script>
 </body>
 </html>
