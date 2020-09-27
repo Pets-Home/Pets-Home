@@ -1,7 +1,7 @@
 let counter = 0;
 let score =0;
 
-
+let sellection= ['','Goat','Banda','Parrot','Frog', 'Butterfly','Monkey','Camel','Giraffe','Tiger','Horse', 'Snake','Dog','Donkey', 'Elephant','Lion','Fox','Owl','Zebra']
 
 
 
@@ -93,11 +93,11 @@ selectEl.appendChild(optionElFirst);
 optionElFirst.textContent='';
 imgEl.src = '';
 
-for ( var i=0 ; i <=allImg.length-1 ; i++ )
+for ( var i=0 ; i <=sellection.length-1 ; i++ )
 {
   let optionEl = document.createElement('option');
   selectEl.appendChild(optionEl);
-  optionEl.textContent=allImg[i].name;
+  optionEl.textContent=sellection[i];
 
 }
 // //////////////// the right one 
