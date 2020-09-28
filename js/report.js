@@ -2,7 +2,6 @@ let textNameEl = document.getElementById('name');
 let numEl = document.getElementById('number');
 let infoEl = document.getElementById('info');
 let j =0;
-j++;
 
 var x = document.getElementById("demo");
 function getLocation() {
@@ -24,16 +23,20 @@ function showPosition(position) {
     location : `${ position.coords.latitude} , ${position.coords.longitude}`
   };
 
-  j++;
+
   localStorage.setItem(`key,${j}`,JSON.stringify(data));
-
-
+  j++;
+ 
 }
 
 
 function alertShown ()
 {
 alert('Your report has been recived .. Thank you');
+textNameEl.value = '';
+numEl.value = '';
+infoEl.value = '';
+location.reload();
 }
 
 
