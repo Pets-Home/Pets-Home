@@ -32,6 +32,10 @@ function render(all){
     let DiveEl = document.createElement('div')
     let h1El = document.createElement('h1');
     let parEl= document.createElement('p');
+    section.className="container";
+    DiveEl.className="overlay";
+    imageEl.className="image";
+    parEl.className="text";
     
     imageEl.src= all[i].path;
     h1El.textContent = all[i].name;
