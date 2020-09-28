@@ -59,3 +59,24 @@ location.reload();
 //   }
 //   x[slideIndex[no]-1].style.display = "block";
 // }
+
+
+
+///////////////
+//////////////////////
+////////////////////////////////
+/////////////////////////////////////////////
+////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+//to make header scrollable
+
+//to make header scrollable
+window.addEventListener('scroll' , () => {
+  let header = document.querySelector("header");
+  let Home = document.querySelectorAll("a");
+  header.classList.toggle("new-header",window.scrollY > 0);
+for ( let i = 0 ; i<Home.length ; i++)
+{
+  Home[i].classList.toggle("new-Home" , window.scrollY > 0);
+}
+});

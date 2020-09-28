@@ -57,11 +57,11 @@ img {vertical-align: middle;}
                 <li><a href="report.html">Report </a></li>
                 <li><a href="game.html">Let's Fun</a></li>
                 <li><a href="about-us.html">About Us </a></li>
-             <li><a href="Pets-add-by-user.html">Pets Added By Our Visiter's </a></li>
+                <li><a href="Pets-add-by-user.html">Pets Added By Our Visiter's </a></li>
 
             </ul>
         </nav>
-        <img src="img/home pets.jpg" alt="Pets">
+        <img src="img/logo.jpg" alt="Pets"  id="logo">
     </header>
     <!-- <div class="slideshow-container">
         <div class="mySlides1">
@@ -104,30 +104,48 @@ img {vertical-align: middle;}
       </div> -->
     <main>
         <section id="treated-Pets"></section>
-        <section>
-            <h3>REPORT FOR A PET</h3>
-            <input id="name" type="text" placeholder="Enter Your Name">
-            <input id="number" type="number" placeholder="Enter Your Phone Number" >
-            <textarea id="info" placeholder="Describe The Emergency " ></textarea>
+
+        <article class="row">
+
+          <section class="column">
+            <fieldset>
+              <legend><h2>REPORT FOR A PET</h2></legend>
+              
+              <input id="name" type="text" placeholder="Enter Your Name">
+              <input id="number" type="number" placeholder="Enter Your Phone Number" >
+              <textarea id="info" placeholder="Describe The Emergency " ></textarea>
+
+              <p id="demo"> <button  class="But" onclick="getLocation()">Location</button> </p>
+              <input class="But" onclick="alertShown()" type="submit">
+
+     
+
+            </fieldset>
+
         </section>
-        <section>
+        <section class="column">
             <h3>DONATION</h3>
             <img src="img/donation1.jpg" alt="donation">
-            <i class="fa fa-paypal" style="font-size:48px;color:red"></i>
-            <i class="fa fa-cc-visa" style="font-size:48px;color:red"></i>
+            <br>
+            <i class="fa fa-paypal" style="font-size:48px;color:purple"></i>
+            <i class="fa fa-cc-visa" style="font-size:48px;color:purple"></i>
             
-             <a href="tel:123-456-7890"><i class="fa fa-phone" style="font-size:48px;color:red"></i></a>
+             <a href="tel:123-456-7890"><i class="fa fa-phone" style="font-size:48px;color:purple"></i></a>
 
-            <a href = "mailto: abc@example.com"> <i class="material-icons" style="font-size:48px;color:red">email</i></a>
+            <a href = "mailto: abc@example.com"> <i class="material-icons" style="font-size:48px;color:purple">email</i></a>
            
 
         </section>
+
+        </article>
+
     </main>
-    <p id="demo"> <button onclick="getLocation()">Location</button> </p>
-    <input onclick="alertShown()" type="submit">
+
     <footer>
         <p>&copy;2020<span>YOU ARE WELCOME</span></p>
     </footer>
     <script src="/js/report.js"></script>
 </body>
 </html>
+
+
