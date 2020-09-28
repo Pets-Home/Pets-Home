@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+*{
+    box-sizing: border-box;
+    transition: .6s;
+}
+body{
+text-align: center;
+
+}
+header{
+    position: fixed;
+    width: 100%;
+    /* background-color: brown; */
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+header nav ul li {
+    list-style: none;
+    display: inline-block;
+    float:right;
+    padding: 20px;
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+  
+
+}
+header nav ul li a{
+    text-decoration: none;
+    color: purple;
+    letter-spacing: 1px;
+    
+}
+a.new-Home
+{
+    color: white;
+}
+
+header img{
+    width: 100px;
+    float: left;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+header.new-header{
+    background-color: rgb(153, 50, 204,0.7);
+    margin-top: -15px;
+}
+
+#logo{
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    margin-left:20px; 
+}
+
+main{
+margin-top: 150px;
+}
+h1{
+color:rgb(153, 50, 204);
+font-family: 'Lobster', cursive;
+font-size: 50px;
+
+
+}
+/* #imgshow{
+    border:6px solid rgb(153, 50, 204) ;
+margin-left: 522px;
+margin-right: 521px;
+    
+} */
+main img {
+    width: 450px;
+    height: 400px;
+    border: 6px solid rgb(153, 50, 204);
+    filter: blur(12px);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+ #start{
+     background-color: rgb(153, 50, 204);
+    color:white;
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 10px;
+
+    
+ }
+ #start:hover{
+     background-color: violet;
+ }
+ #select-el{
+     width: 150px;
+     height: 30px;
+     border: 2px solid rgb(153, 50, 204) ;
+ }
+ #next{
+    background-color: rgb(153, 50, 204);
+    color:white;
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 10px;
+    margin-left: 30px;
+    padding-bottom: 6px;
+ }
+
+ #next:hover{
+    background-color: violet;
+}
+#R{
+    font-family: 'Lobster', cursive;
+    font-size: 40px; 
+
+}
+footer{
+    clear: both;
+    width: 100%;
+    background-color: rgb(153, 50, 204,0.7);
+    height: 200px;
+    top: 365vh;
+    position: absolute;
+    left: 0px;
+    
+}
+footer p{
+    color: white;
+    font-family: 'Lobster', cursive;
+    letter-spacing: 1px;
+    margin-top: 100px;
+
+}
