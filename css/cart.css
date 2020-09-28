@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@700&display=swap');
+
+*{
+    box-sizing: border-box;
+    transition: .6s;
+}
+body{
+text-align: center;
+
+}
+header{
+    position: fixed;
+    width: 100%;
+    /* background-color: brown; */
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+header nav ul li {
+    list-style: none;
+    display: inline-block;
+    float:right;
+    padding: 20px;
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+  
+
+}
+header nav ul li a{
+    text-decoration: none;
+    color: purple;
+    letter-spacing: 1px;
+    
+
+}
+
+a.new-Home
+{
+    color: white;
+}
+
+header img{
+    width: 100px;
+    float: left;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+header.new-header{
+    background-color: rgb(153, 50, 204,0.7);
+    margin-top: -15px;
+    
+
+}
+
+#logo{
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    margin-left:20px; 
+}
+section #collection{
+    margin-top: 150px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    clear: both;
+    width: 100%;
+    background-color: rgb(153, 50, 204,0.7);
+    height: 100px;
+    top: 365vh;
+    position: absolute;
+    left: 0px;
+    
+}
+footer p{
+    color: white;
+    font-family: 'Lobster', cursive;
+    letter-spacing: 1px;
+    padding-top: 20px;
+
+}
+

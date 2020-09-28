@@ -144,3 +144,10 @@ else if (localStorage.getItem('name')==='fish'){
 
 }
 ////////////////////////////////////////////////////////////////////////////
+//to make header scrollable 
+window.addEventListener('scroll' , () => {
+  let header = document.querySelector("header");
+  
+  header.classList.toggle("new-header",window.scrollY > 0);
+ 
+})

@@ -86,47 +86,22 @@ function newImg(name,object) {
 }
 
 
-// function showResults(userPet){
+
+////////////////////////////////////////
+//to make header scrollable 
+
+window.addEventListener('scroll' , () => {
+  let header = document.querySelector("header");
+  let Home = document.querySelectorAll("a");
 
 
-//   for (let i =0; i<li;i++){
-//     let recivedData = JSON.parse(localStorage.getItem(`i,${i+1}`));
-// if (recivedData==null){
-//   li=0;
-//   // location.reload();
-// }
-//     let sectionUser = document.createElement('section');
-//     let userImg = document.createElement('img');
-//     let userH1 = document.createElement('h1');
-//     let userPar = document.createElement('p');
-//     let parForRemoveEl = document.createElement('p');
+  header.classList.toggle("new-header",window.scrollY > 0);
 
+for ( let i = 0 ; i<Home.length ; i++)
+{
+  Home[i].classList.toggle("new-Home" , window.scrollY > 0);
+}
 
-//     userImg.src = recivedData.name.path;
-//     userH1.textContent = recivedData.name.name;
-//     userPar.textContent = recivedData.name.description;
-//     parForRemoveEl.textContent='X';
-//     parForRemoveEl.id=`i,${i+1}`;
-//     parForRemoveEl.className='Remove';
+ 
 
-
-//     userPet.appendChild(sectionUser);
-//     sectionUser.appendChild(userImg);
-//     sectionUser.appendChild(userH1);
-//     sectionUser.appendChild(userPar);
-//     sectionUser.appendChild(parForRemoveEl);
-
-//   }
-  
-//   for (let j=0 ; j<xClickEl.length ; j++){
-//     xClickEl[j].addEventListener('click',function(event)
-//     {
-//       let id = event.target.id;
-//       localStorage.removeItem(id);
-//       event.target.parentElement.remove();
-//     });
-//   }
-
-// }
-
-
+})
