@@ -183,7 +183,7 @@ footer{
     clear: both;
     width: 100%;
     background-color: rgb(153, 50, 204,0.7);
-    height: 100px;
+    height: 200px;
     top: 365vh;
     position: absolute;
     left: 0px;
@@ -193,7 +193,7 @@ footer p{
     color: white;
     font-family: 'Lobster', cursive;
     letter-spacing: 1px;
-    padding-top: 20px;
+    margin-top: 100px;
 
 }
 #logo{
