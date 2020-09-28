@@ -61,7 +61,7 @@ img {vertical-align: middle;}
 
             </ul>
         </nav>
-        <img src="img/home pets.jpg" alt="Pets">
+        <img src="img/logo.jpg" alt="Pets"  id="logo">
     </header>
     <!-- <div class="slideshow-container">
         <div class="mySlides1">
@@ -104,13 +104,15 @@ img {vertical-align: middle;}
       </div> -->
     <main>
         <section id="treated-Pets"></section>
-        <section>
+        <section id="Report">
             <h3>REPORT FOR A PET</h3>
             <input id="name" type="text" placeholder="Enter Your Name">
             <input id="number" type="number" placeholder="Enter Your Phone Number" >
             <textarea id="info" placeholder="Describe The Emergency " ></textarea>
+            <p id="demo"> <button onclick="getLocation()">Location</button> </p>
+            <input onclick="alertShown()" type="submit">
         </section>
-        <section>
+        <section id="Donation">
             <h3>DONATION</h3>
             <img src="img/donation1.jpg" alt="donation">
             <i class="fa fa-paypal" style="font-size:48px;color:red"></i>
@@ -123,11 +125,18 @@ img {vertical-align: middle;}
 
         </section>
     </main>
-    <p id="demo"> <button onclick="getLocation()">Location</button> </p>
-    <input onclick="alertShown()" type="submit">
+  
     <footer>
         <p>&copy;2020<span>YOU ARE WELCOME</span></p>
     </footer>
     <script src="/js/report.js"></script>
 </body>
 </html>
+
+
+
+<!-- <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<section class="form__group">
+  <input type="text" class="form__input" id="name" placeholder="Full name" required="" />
+  <label for="name" class="form__label">Full Name</label>
+</section> -->
