@@ -68,10 +68,10 @@ main
     float: left;
     width: 50%;
     padding: 10px;
-    height: 300px; /* Should be removed. Only for demonstration */
+    height: 300px;
   }
   
-  /* Clear floats after the columns */
+ 
   .row:after {
     content: "";
     display: table;
@@ -138,7 +138,3 @@ fieldset {
 fieldset:hover {
   background: rgb(168, 134, 168);
 }
-
-
-
-/* /////////////////////////////////////////////// */
