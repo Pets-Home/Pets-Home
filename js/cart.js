@@ -24,24 +24,24 @@ else if (localStorage.getItem('name')==='fish'){
 
 
 
-
-
 function render(all){
   for (var i=0; i<all.length;i++){
 
     let section = document.createElement('section');
     let imageEl = document.createElement('img');
+    let DiveEl = document.createElement('div')
     let h1El = document.createElement('h1');
     let parEl= document.createElement('p');
-
+    
     imageEl.src= all[i].path;
     h1El.textContent = all[i].name;
     parEl.textContent = all[i].discribtion;
 
     cartsContent.appendChild(section);
     section.appendChild(imageEl);
-    section.appendChild(h1El);
-    section.appendChild(parEl);
+    DiveEl.appendChild(h1El);
+    DiveEl.appendChild(parEl);
+    section.appendChild(DiveEl)
   }
 
 }
@@ -84,8 +84,6 @@ function addNewF() {
 function newImg(name,object) {
   carts.addtolocalstorage(`i,${li}`, object);
 }
-
-
 
 ////////////////////////////////////////
 //to make header scrollable 
