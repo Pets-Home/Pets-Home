@@ -23,6 +23,19 @@
         <img src="img/logo.jpg" alt="Pets"  id="logo">
     </header>
     <main>
+            
+            <div class="popup" id="popup" id="close">
+                 <div class="popup-inner">
+                    <a href="#close" class="close">×</a>
+                    <h1>Add Your Pet</h1>
+                    <input type="file" id="addImg">
+                    <label for="addImg">Upload a file</label><br>
+                    <input type="text" placeholder="Enter Pet Name" id="addName" class="name"><br> 
+                    <textarea placeholder="Add Description for your Pet" id="addDescription" class="des"></textarea><br>
+                    <button onclick=" addNewF()" class="submit">Submit</button>          
+                </div>
+            </div>
+
         <section >
             <article id="collection">
                 
@@ -39,19 +52,14 @@
             <article id="userPetsFishes">
 
             </article>
-            <button>Add New Pet</button>
+            
        </section>
-       <section class="form">
-           <input type="text" placeholder="Enter Pet Name" id="addName">
-           <input type="file" id="addImg">
-           <textarea placeholder="Add Description for your Pet" id="addDescription"></textarea>
-           <button onclick=" addNewF()">Submit</button>
 
-       </section>
     </main>
-    <!-- <footer>
+    <a href="#popup" class="button">Add New Pet</a>
+    <footer>
         <p>&copy;2020  <span>YOU ARE WELCOME</span></p>
-    </footer> -->
+    </footer>
     <script src="js/app.js"></script>
     <script src="js/cart.js"></script>
 </body>
