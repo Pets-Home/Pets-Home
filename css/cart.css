@@ -1,3 +1,36 @@
+Skip to content
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@Yaqeen-stak 
+Pets-Home
+/
+Pets-Home
+0
+0
+0
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+Pets-Home/css/cart.css
+@Yaqeen-stak
+Yaqeen-stak css for cart page
+Latest commit f30a3b8 14 hours ago
+ History
+ 3 contributors
+@Yaqeen-stak@RaniaAbdullahh@Hamza-Rashed
+187 lines (127 sloc)  2.43 KB
+  
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@700&display=swap');
@@ -59,22 +92,23 @@ header.new-header{
     width: 70px;
     margin-left:20px; 
 }
-section #collection{
-    margin-top: 150px;
-    
-}
-
-#collection section{
+.container {
     position: relative;
-    width: 33%;
-}
-
-#collection section img{
+    width: 30%;
+    display: inline-block;
+    margin: 20px;
+   
+  }
+  
+  .image {
+    display: block;
     width: 100%;
     height: 600px;
-}
+    border-radius: 20px;
 
-   #collection section div {
+  }
+  
+  .overlay {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -83,25 +117,69 @@ section #collection{
     height: 100%;
     width: 100%;
     opacity: 0;
-    transition: .9s ease;
-    background-color: #008CBA;
+    transition: .8s ease;
+    background-color:  rgb(153, 50, 204,0.7);
+    border-radius: 20px;
   }
   
-  #collection section img:hover div {
+  .container:hover .overlay {
     opacity: 1;
   }
   
-  #collection section div p {
+  .text {
     color: white;
     font-size: 20px;
     position: absolute;
     top: 50%;
     left: 50%;
+    width: 100%;
+    padding: 20px;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
   }
+
+#collection{
+    margin-top: 150px;
+}
+.form{
+    width: 50%;
+    height: 100vh;
+    text-align:center ;
+    background-color: blueviolet;
+    /* position:;
+    z-index: 2; */
+
+
+}
+.form input{
+    width: 25%;
+    height: 60px;
+    border: none;
+    font-size: 20px;
+
+    
+}
+.form input:focus {
+    border-bottom: 2px solid white;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -139,4 +217,5 @@ footer p{
     padding-top: 20px;
 
 }
+
 
