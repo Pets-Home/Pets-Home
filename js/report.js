@@ -3,6 +3,7 @@ let numEl = document.getElementById('number');
 let infoEl = document.getElementById('info');
 let j =0;
 
+
 var x = document.getElementById("demo");
 function getLocation() {
 
@@ -11,6 +12,7 @@ function getLocation() {
   } else { 
     x.innerHTML = "Geolocation is not supported by this browser.";
   }
+  document.getElementsById('alert-show').disabled=false;
 
 }
 function showPosition(position) {

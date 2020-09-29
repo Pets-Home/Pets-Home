@@ -55,13 +55,15 @@ header.new-header{
 
 main
 {
-    margin-top: 100px;
+    margin-top: 200px;
 }
 
 #treated-Pets
 {   height: 300px;
-    width: 100%;
-    background-color: rgb(135, 135, 151);
+    width: 80%;
+    /* background-color: rgb(135, 135, 151); */
+    position: relative;
+
 }
 
 .column {
@@ -90,11 +92,13 @@ input[type=text], input[type=number], textarea {
 
   footer{
     clear: both;
+    position: absolute;
     width: 100%;
     background-color: rgb(153, 50, 204,0.7);
     height: 200px;
-    top: 100%;
-    position: absolute;
+    top:  100%;
+    margin-top: 25%;
+
     left: 0px;
     
 }
@@ -113,6 +117,12 @@ footer p{
     padding: 14px 40px;
     border-radius: 12px;
 }
+/* ////////////////////////////////////////////////////////////////////// */
+
+
+
+
+
 
 fieldset
 {
@@ -138,3 +148,89 @@ fieldset {
 fieldset:hover {
   background: rgb(168, 134, 168);
 }
+
+/* ////////////////////////////////////////////////////////////// */
+
+
+.slideshow {
+    list-style-type: none;
+    position: absolute;
+
+
+
+  }
+
+
+  
+  /** SLIDESHOW **/
+  .slideshow,
+  .slideshow:after { 
+      top: 100px; /*Not sure why I needed this fix*/
+
+      width: 80%;
+      height: 400px;
+      left: 0px;
+      z-index: 0; 
+  }
+  
+  .slideshow li span { 
+
+      position: absolute;
+      width: 80%;
+      height: 400px;
+      bottom:  0px;
+      left: 280px;
+      color: transparent;
+      background-size: cover;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      opacity: 0;
+      z-index: 0;
+      animation: imageAnimation 30s linear infinite 0s; 
+  }
+  
+  .slideshow img{
+
+      height: 400px;
+      width: 100%;
+  }
+  
+  /* .slideshow li:nth-child(1) span { 
+      background-image: url("../imgReport/BA1.jpg"); 
+  } */
+  .slideshow li:nth-child(2) span { 
+      animation-delay: 6s; 
+  }
+  .slideshow li:nth-child(3) span { 
+      animation-delay: 12s; 
+  }
+  .slideshow li:nth-child(4) span {  
+      animation-delay: 18s; 
+  }
+  .slideshow li:nth-child(5) span { 
+      animation-delay: 24s; 
+  }
+  
+  
+  
+  @keyframes imageAnimation { 
+      0% { opacity: 0; animation-timing-function: ease-in; }
+      8% { opacity: 1; animation-timing-function: ease-out; }
+      17% { opacity: 1 }
+      25% { opacity: 0 }
+      100% { opacity: 0 }
+  }
+  
+  
+  @keyframes titleAnimation { 
+      0% { opacity: 0 }
+      8% { opacity: 1 }
+      17% { opacity: 1 }
+      19% { opacity: 0 }
+      100% { opacity: 0 }
+  }
+  
+  
+  .no-cssanimations .cb-slideshow li span {
+      opacity: 1;
+  }
