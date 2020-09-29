@@ -210,6 +210,35 @@ fieldset:hover {
   .slideshow li:nth-child(5) span { 
       animation-delay: 24s; 
   }
+
+
+    .slideshow li:nth-child(6) span { 
+        animation-delay: 30s; 
+    }
+    .slideshow li:nth-child(7) span { 
+        animation-delay: 36s; 
+    }
+    .slideshow li:nth-child(8) span {  
+        animation-delay: 42s; 
+    }
+    .slideshow li:nth-child(9) span { 
+        animation-delay: 48s; 
+    }
+
+    .slideshow li:nth-child(7) span { 
+        animation-delay: 54s; 
+    }
+    .slideshow li:nth-child(8) span {  
+        animation-delay: 60s; 
+    }
+    .slideshow li:nth-child(9) span { 
+        animation-delay: 66s; 
+    }
+
+
+
+
+
   
   
   

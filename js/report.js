@@ -12,11 +12,12 @@ function getLocation() {
   } else { 
     x.innerHTML = "Geolocation is not supported by this browser.";
   }
-  document.getElementsById('alert-show').disabled=false;
+
 
 }
+
 function showPosition(position) {
-  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  x.innerHTML = "Latitude: " + position.coords.latitude +
   "<br>Longitude: " + position.coords.longitude;
   let data = {
     name: textNameEl.value,
