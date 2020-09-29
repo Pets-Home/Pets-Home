@@ -41,7 +41,7 @@ function start ()
 
 function show ()
 {
-  if ( counter<=10 )
+  if ( counter<=5 )
   {
 
 
@@ -65,17 +65,17 @@ function show ()
   else
   {
     // document.getElementById('R').innerHTML=`Your score is ${score} of 10`;
-    if (score===10)
+    if (score===5)
     {
-      document.getElementById('R').innerHTML=`Excellent Your score is 10/10 `;
+      document.getElementById('R').innerHTML=`Excellent Your score is 5/5 `;
        
     }
-    else if (score<10 && score>=7)
+    else if (score<5 && score>=3)
     {
-      document.getElementById('R').innerHTML=`Your score is ${score} of 10`;
+      document.getElementById('R').innerHTML=`Your score is ${score} of 5`;
     }
     else {
-      document.getElementById('R').innerHTML=`Your score is ${score} of 10 , its bad`;
+      document.getElementById('R').innerHTML=`Your score is ${score} of 5, its bad`;
     }
   }
 

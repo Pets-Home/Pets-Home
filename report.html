@@ -7,136 +7,79 @@
     <link rel="resetsheet" href="css/reset.css">
     <link rel="stylesheet" href="css/report.css" />
     <link rel="icon" href="img/home pets.jpg">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
- 
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<!-- <style>
-    * {box-sizing: border-box}
-.mySlides1, .mySlides2 {display: none}
-img {vertical-align: middle;}
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-/* On hover, add a grey background color */
-.prev:hover, .next:hover {
-  background-color: #F1F1F1;
-  color: black;
-}
-</style> -->
+
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="index.html">Home </a> </li>
-                <li><a href="report.html">Report </a></li>
-                <li><a href="game.html">Let's Fun</a></li>
-                <li><a href="about-us.html">About Us </a></li>
-             <li><a href="Pets-add-by-user.html">Pets Added By Our Visiter's </a></li>
-
+              <li><a href="about-us.html">About Us </a></li>
+              <li><a href="game.html">Lets Play</a></li>
+              <li><a href="Pets-add-by-user.html">Pets Gallery</a></li>
+            <li><a href="report.html"> Report  </a></li>
+            <li><a href="index.html">Home </a> </li>
             </ul>
         </nav>
-        <img src="img/logo.jpg" alt="Pets"  id="logo">
+        <img src="img/logo6.jpg" alt="Pets" id="logo">
     </header>
-    <!-- <div class="slideshow-container">
-        <div class="mySlides1">
-          <img src="reportimg/BA1.jpg" style="width:100%">
-        </div>
-        <div class="mySlides1">
-          <img src="reportimg/BA2.jpg" style="width:100%">
-        </div>
-        <div class="mySlides1">
-          <img src="reportimg/BA3.jpg" style="width:100%">
-        </div>
-        <div class="mySlides1">
-            <img src="reportimg/BA7.jpg" style="width:100%">
-          </div>
-          <div class="mySlides1">
-            <img src="reportimg/BA9.jpg" style="width:100%">
-          </div>
-        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
-      </div>
-     
-      <div class="slideshow-container">
-        <div class="mySlides2">
-          <img src="reportimg/BA4.jpg" style="width:100%">
-        </div>
-        <div class="mySlides2">
-          <img src="reportimg/BA5.jpg" style="width:100%">
-        </div>
-        <div class="mySlides2">
-          <img src="reportimg/BA6.PNG" style="width:100%">
-        </div>
-        <div class="mySlides2">
-            <img src="reportimg/BA8.PNG" style="width:100%">
-          </div>
-          <div class="mySlides2">
-            <img src="reportimg/BA10.PNG" style="width:100%">
-          </div>
-        <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
-      </div> -->
+   
     <main>
         <section id="treated-Pets"></section>
-        <section id="Report">
-            <h3>REPORT FOR A PET</h3>
-            <input id="name" type="text" placeholder="Enter Your Name">
-            <input id="number" type="number" placeholder="Enter Your Phone Number" >
-            <textarea id="info" placeholder="Describe The Emergency " ></textarea>
-            <p id="demo"> <button onclick="getLocation()">Location</button> </p>
-            <input onclick="alertShown()" type="submit">
-        </section>
-        <section id="Donation">
-            <h3>DONATION</h3>
-            <img src="img/donation1.jpg" alt="donation">
-            <i class="fa fa-paypal" style="font-size:48px;color:red"></i>
-            <i class="fa fa-cc-visa" style="font-size:48px;color:red"></i>
+           <ul class="slideshow">
+             <li><span><img src="reportimg/BA1.jpg" alt=""></span></li>
+              <li><span><img src="reportimg/BA2.jpg" alt=""></span></li>
+              <li><span><img src="reportimg/BA3.jpg" alt=""></span></li>
+              <li><span><img src="reportimg/BA4.jpg" alt=""></span></li>
+              
+              <li><span><img src="reportimg/BA6.jpg" alt=""></span></li>
+              <li><span><img src="reportimg/BA7.PNG" alt=""></span></li>
+              <li><span><img src="reportimg/BA8.PNG" alt=""></span></li>
+          
+              
+              <li><span><img src="reportimg/BA11.png" alt=""></span></li>
             
-             <a href="tel:123-456-7890"><i class="fa fa-phone" style="font-size:48px;color:red"></i></a>
-
-            <a href = "mailto: abc@example.com"> <i class="material-icons" style="font-size:48px;color:red">email</i></a>
-           
-
+           </ul>
+        <article class="row">
+          <section class="column">
+            <fieldset>
+              <legend><h2>REPORT FOR A PET</h2></legend>
+              <input id="name" type="text" placeholder="Enter Your Name">
+              <input id="number" type="number" placeholder="Enter Your Phone Number" >
+              <textarea id="info" placeholder="Describe The Emergency " ></textarea>
+              <p id="demo"> <button  class="But" onclick="getLocation()">Location</button> </p>
+              <button id="alert-show"  class="But" onclick="alertShown()">Submit</button>
+            </fieldset>
         </section>
+        
+        </article>
     </main>
-  
     <footer>
-        <p>&copy;2020<span>YOU ARE WELCOME</span></p>
-    </footer>
+      <div class="contact">
+          <!-- contact with me on these information -->
+          <h2>Contact us :</h2>
+          <p>Tel : 0096275555555</p>
+          <p>Address: Amman , LTUS </p>
+      </div>
+      <div class="contact1">
+          <!-- also you can contact with me on social media -->
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-skype"></i></a>
+         
+      </div>
+      <!-- <div id="wlc-mgs"><p>&copy;2020  <span>YOU ARE WELCOME</span></p></div> -->
+      <!-- <div class="contact1">
+          therd way for contact which by email and send a massege
+          <input type="text" placeholder="Enter Your name">
+          <input type="text" placeholder="Enter Your Email">
+          <textarea placeholder="Enter Your Massege"></textarea><br>
+          <button>Send</button>
+      </div> -->
+      <!-- this is my website -->
+      
     <script src="/js/report.js"></script>
 </body>
 </html>
-
-
-
-<!-- <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-<section class="form__group">
-  <input type="text" class="form__input" id="name" placeholder="Full name" required="" />
-  <label for="name" class="form__label">Full Name</label>
-</section> -->

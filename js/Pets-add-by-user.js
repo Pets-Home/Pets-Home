@@ -67,7 +67,7 @@ function showResults(){
       let userH1 = document.createElement('h1');
       let userPar = document.createElement('p');
       let parForRemoveEl = document.createElement('p');
-  
+      let DiveEl = document.createElement('div')  
   
       userImg.src = recivedData.name.path;
       userH1.textContent = recivedData.name.name;
@@ -75,14 +75,19 @@ function showResults(){
       parForRemoveEl.textContent='X';
       parForRemoveEl.id=`i,${i+1}`;
       parForRemoveEl.className='Remove';
+      sectionUser.className="container";
+      DiveEl.className="overlay";
+      userImg.className="image";
+      userPar.className="text";
   
+
   
       userPets.appendChild(sectionUser);
       sectionUser.appendChild(userImg);
-      sectionUser.appendChild(userH1);
-      sectionUser.appendChild(userPar);
+      DiveEl.appendChild(userH1);
+      DiveEl.appendChild(userPar);
       sectionUser.appendChild(parForRemoveEl);
-  
+      sectionUser.appendChild(DiveEl);
     }
     
     for (let j=0 ; j<xClickEl.length ; j++){

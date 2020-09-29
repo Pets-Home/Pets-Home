@@ -1,0 +1,41 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@700&display=swap');
+
+*{
+    box-sizing: border-box;
+    transition: .6s;
+}
+body{
+text-align: center;
+
+}
+header{
+    position: absolute;
+    width: 100%;
+    /* background-color: brown; */
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+header nav ul li {
+    list-style: none;
+    display: inline-block;
+    float:right;
+    padding: 20px;
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+  
+
+}
+header nav ul li a{
+    text-decoration: none;
+    color: purple;
+    letter-spacing: 1px;
+}
+a.new-Home
+{
+    color: white;
+}
+

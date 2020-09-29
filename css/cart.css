@@ -1,36 +1,4 @@
-Skip to content
-Search or jump to…
 
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@Yaqeen-stak 
-Pets-Home
-/
-Pets-Home
-0
-0
-0
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-Settings
-Pets-Home/css/cart.css
-@Yaqeen-stak
-Yaqeen-stak css for cart page
-Latest commit f30a3b8 14 hours ago
- History
- 3 contributors
-@Yaqeen-stak@RaniaAbdullahh@Hamza-Rashed
-187 lines (127 sloc)  2.43 KB
-  
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@700&display=swap');
@@ -44,7 +12,7 @@ text-align: center;
 
 }
 header{
-    position: fixed;
+    position: absolute;
     width: 100%;
     /* background-color: brown; */
     left: 0;
@@ -76,7 +44,7 @@ a.last-one{
     text-decoration: none;
     font-size: 1.326rem;
     font-weight: 599;
-    background-color: purple;
+    background-color: rgb(153, 50, 204);
     color: white;
     padding: 1.6rem 2rem;
     border-radius: 15px;
@@ -116,8 +84,9 @@ header.new-header{
   .image {
     display: block;
     width: 100%;
-    height: 600px;
+    height: 290px;
     border-radius: 20px;
+    object-fit: fill;
 
   }
   
@@ -140,7 +109,7 @@ header.new-header{
   }
   
   .overlay h1{
-      top: 0;
+    margin-top: 0;
       font-size: 30px;
       color: rgb(255, 255, 255);
       font-family: 'Lobster', cursive;
@@ -267,10 +236,11 @@ outline: none;
 font-size: 18px;
 border-bottom: 1px solid gray;
 margin-top: 35px;
+font-family: Arial, Helvetica, sans-serif;
 
 }
 .name:focus{
-    border-bottom: 2px solid blue;
+    border-bottom: 2px solid  rgb(153, 50, 204);
 }
 
 .popup-inner h1{
@@ -289,7 +259,7 @@ label {
     width: 35%;
     display: inline-block;
     height: 50px;
-    background-color: blue;
+    background-color:  rgb(153, 50, 204);
     font-size: 25px;
     font-weight: bold;
     color: white;
@@ -297,7 +267,7 @@ label {
     border-radius: 20px;
     box-shadow: 1px 1px 1px black;
     margin-top: 30px;
-
+font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
   }
 
@@ -308,40 +278,110 @@ outline: none;
 font-size: 18px;
 margin-top: 40px;
 padding: 15px;
+font-family: Arial, Helvetica, sans-serif;
 }
 
 .submit{
     width: 35%;
     display: inline-block;
     height: 50px;
-    background-color: blue;
+    background-color:  rgb(153, 50, 204);
     font-size: 25px;
     font-weight: bold;
     color: white;
     line-height: 50px;
     border-radius: 20px;
     box-shadow: 1px 1px 1px black;
-    margin-top: 65px;
+    margin-top: 10px;
     border: none;
     outline: none;
     cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 footer{
-  
     width: 100%;
-    background-color: rgb(153, 50, 204,0.7);
-    height: 100px;
+    height: 20vh;
+    background-color: rgb(153, 50, 204);
+    top: 180vh;
+    /* border-top-left-radius: 25%;
+    border-top-right-radius: 25%; */
     position: absolute;
-    left: 0px;
+    display: flex;
     
 }
-footer p{
-    color: white;
-    font-family: 'Lobster', cursive;
-    letter-spacing: 1px;
-    padding-top: 20px;
-
+.contact{
+    display:inline-block;
+    width: 23%;
+    margin-top: 10px;
+    margin-left: 6%;
+    text-align: center;
+    color:white;
 }
+footer .contact1{
+    display:inline-block;
+    width: 23%;
+    margin-bottom: 30px;
+    margin-left: 50%;
+    text-align: center;
+    color:white;
+}
+footer p{
+    font-size: 20px;
+    margin: 10px;
+}
+footer h3{
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+color: #999;
+}
+footer a{
+    color: rgb(80, 80, 241);
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  .fa:hover {
+      opacity: 0.7;
+  }
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+    width: 80px;
+    font-size: 40px;
+    border-radius: 50%;
+  }
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+    width: 80px;
+    font-size: 40px;
+    border-radius: 50%;
+  }
+  .fa-skype {
+    background: #00AFF0;
+    color: white;
+    width: 80px;
+    font-size: 40px;
+    border-radius: 50%;
+  }
+
+
+  .contact1{
+    width: 23%;
+    margin-top: 40px;
+    margin-left: 6%;
+    text-align: center;
+    color: rgb(218, 215, 204);
+}
+
+
 
 
