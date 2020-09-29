@@ -95,10 +95,10 @@ function newImg(name,object) {
 window.addEventListener('scroll' , () => {
   let header = document.querySelector("header");
   let Home = document.querySelectorAll("a");
-
+  let lastOne = document.querySelector('.button')
 
   header.classList.toggle("new-header",window.scrollY > 0);
-
+  lastOne.classList.toggle('last-one',window.scrollY > 0)
 for ( let i = 0 ; i<Home.length ; i++)
 {
   Home[i].classList.toggle("new-Home" , window.scrollY > 0);
