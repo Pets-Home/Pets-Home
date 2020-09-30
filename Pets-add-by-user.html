@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pet's Home</title>
     <link rel="resetsheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/report.css" />
+    <link rel="stylesheet" href="css/cart.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -14,7 +14,7 @@
             <ul>
                 <li><a href="about-us.html">About Us </a></li>
                 <li><a href="game.html">Lets Play</a></li>
-                <li><a href="Pets-add-by-user.html">Pets Gallery</a></li>
+                <li><a href="Pets-add-by-user.html">Pets Gallery</a><span id="counter"></span></li>
               <li><a href="report.html"> Report  </a></li>
               <li><a href="index.html">Home </a> </li>
                 
@@ -23,8 +23,8 @@
         <img src="img/logo6.jpg" alt="Pets" id="logo">
     </header>
     <main>
-        <article id="userPets">
-
+        <article id="collection">
+<h1 id="empty" style="display: none;">There is no more Pets</h1>
         </article>
     </main>
     <footer>
@@ -52,6 +52,7 @@
         <!-- this is my website -->
         
     <script src="js/app.js"></script>
+    <script src="js/counter.js"></script>
 <script src="js/Pets-add-by-user.js"></script>
 </body>
 </html>

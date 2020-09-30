@@ -8,6 +8,9 @@ let sellection= ['','Goat','Banda','Parrot','Frog', 'Butterfly','Monkey','Camel'
 let imgEl = document.getElementById('img-id');
 let scoreEl = document.getElementById('result');
 let selectEl = document.getElementById('select-el');
+let start_game = document.getElementById('start');
+let next = document.getElementById('next')
+let try_agin = document.getElementById('try')
 
 let allImg = [
   {pathImg: 'imgGame/banda.jpg',name: 'Banda'},
@@ -36,7 +39,8 @@ show();
 function start ()
 {
   imgEl.src = allImg[counter].pathImg;
-
+  next.style.display = 'block';
+  start_game.style.display = 'none';
 }
 
 function show ()
@@ -64,18 +68,25 @@ function show ()
   }
   else
   {
+    try_agin.style.display = 'block'
+    next.style.display = 'none'
     // document.getElementById('R').innerHTML=`Your score is ${score} of 10`;
     if (score===5)
     {
-      document.getElementById('R').innerHTML=`Excellent Your score is 5/5 `;
-       
+      document.getElementById('R').style.display = 'block'
+      document.getElementById('R').innerHTML=`Excellent Your score is 5/5 `
+      setTimeout(function(){document.getElementById('R').style.display = 'none'}, 4000);
     }
     else if (score<5 && score>=3)
     {
+      document.getElementById('R').style.display = 'block'
       document.getElementById('R').innerHTML=`Your score is ${score} of 5`;
+      setTimeout(function(){document.getElementById('R').style.display = 'none'}, 4000);
     }
     else {
+      document.getElementById('R').style.display = 'block'
       document.getElementById('R').innerHTML=`Your score is ${score} of 5, its bad`;
+      setTimeout(function(){document.getElementById('R').style.display = 'none'}, 4000);
     }
   }
 

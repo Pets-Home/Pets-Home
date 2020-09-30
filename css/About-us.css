@@ -31,6 +31,9 @@ header nav ul li a{
     color: white;
     letter-spacing: 1px;
 }
+a{
+    text-decoration: none;
+}
 header img{
     width: 100px;
     float: left;

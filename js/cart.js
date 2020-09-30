@@ -1,9 +1,8 @@
+
 let carts = new Cart();
 let li;
-// let xClickEl = document.getElementsByClassName('Remove');
-
 let cartsContent = document.getElementById('collection');
-
+let count_add = 0;
 if (localStorage.getItem('name')==='dog'){
   
   render(allDogs);
@@ -53,10 +52,6 @@ function render(all){
 let newPetName = document.getElementById('addName');
 let newPetDescription = document.getElementById('addDescription');
 
-
-
-
-
 if(localStorage.getItem('new') != undefined) {
   li = parseInt(localStorage.getItem('new'));
 }else{
@@ -64,9 +59,11 @@ if(localStorage.getItem('new') != undefined) {
   li = parseInt(localStorage.getItem('new'));
 }
 
-
+let done = document.getElementById('done');
 function addNewF() {
+  // count_add++
 
+  console.log(localStorage.getItem('new'))
   let reader = new FileReader();
   reader.addEventListener('load' , function () {
     let data = {
@@ -81,7 +78,9 @@ function addNewF() {
  if (localStorage.getItem(`i,${li}`)== null){
    li=0;
  }
-  location.reload();
+//  newPetName.value = '';
+//  newPetDescription.value = '';
+ done.innerHTML = 'Done'
 }
 
 
@@ -98,7 +97,7 @@ window.addEventListener('scroll' , () => {
   let lastOne = document.querySelector('.button')
 
   header.classList.toggle("new-header",window.scrollY > 0);
-  lastOne.classList.toggle('last-one',window.scrollY > 0)
+
 for ( let i = 0 ; i<Home.length ; i++)
 {
   Home[i].classList.toggle("new-Home" , window.scrollY > 0);
@@ -107,3 +106,4 @@ for ( let i = 0 ; i<Home.length ; i++)
  
 
 })
+

@@ -40,7 +40,7 @@ a.new-Home
     color: white;
 }
 
-a.last-one{
+.last-one{
     text-decoration: none;
     font-size: 1.326rem;
     font-weight: 599;
@@ -373,7 +373,6 @@ footer a{
     border-radius: 50%;
   }
 
-
   .contact1{
     width: 23%;
     margin-top: 40px;
@@ -382,6 +381,22 @@ footer a{
     color: rgb(218, 215, 204);
 }
 
+.Remove{
+    position: absolute;
+    padding: 12px;
+    font-size: 20px;
+    margin-left: 90%;
+    margin-top: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: white;
+background-color: black;
+cursor: pointer;
+z-index: 10;
+}
 
-
-
+#done{
+    color: forestgreen;
+    font-size: 23px;
+}

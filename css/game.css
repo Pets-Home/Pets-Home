@@ -83,23 +83,45 @@ main img {
     margin-top: 20px;
     margin-bottom: 20px;
 }
- #start{
+ #start,#try{
      background-color: rgb(153, 50, 204);
     color:white;
     font-family: 'Lobster', cursive;
     font-size: 20px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    position: absolute;
+    left: 44.4%;
+    top: 83vh;
     border: 10px;
-
-    
+width: 200px;
+height: 50px;
+border-radius: 15px;
+font-size: 23px;
+    cursor: pointer;
  }
  #start:hover{
      background-color: violet;
  }
+
+ #next{
+    background-color: rgb(153, 50, 204);
+    color:white;
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+    position: absolute;
+    left: 43%;
+    top: 82vh;
+    border: 10px;
+width: 200px;
+height: 50px;
+border-radius: 15px;
+font-size: 23px;
+    cursor: pointer;
+ }
+
  #select-el{
      width: 150px;
      height: 30px;
+     margin-top: 30px;
      border: 2px solid rgb(153, 50, 204) ;
  }
  #next{
@@ -205,3 +227,12 @@ footer a{
     color: rgb(218, 215, 204);
 }
 
+.result{
+    background-color: purple;
+    color: white;
+    position: absolute;
+    width:auto;
+    padding: 25px;
+    border-radius: 20px;
+    margin-left: 37.7%;
+}
